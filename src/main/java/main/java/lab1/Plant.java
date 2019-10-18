@@ -49,4 +49,13 @@ public class Plant {
         this.grow();
         return this;
     }
+
+    public Plant getLeave(int cnt){
+        if (this.leaves - cnt >= 0){
+            this.leaves -= cnt;
+        } else {
+            this.leaves = 0;
+        }
+        return this;
+    }
 }
