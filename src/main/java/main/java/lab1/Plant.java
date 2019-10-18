@@ -50,6 +50,11 @@ public class Plant {
         return this;
     }
 
+    /**
+     * Method to getting some leaves
+     * @param cnt - count of leaves
+     * @return Plant
+     */
     public Plant getLeave(int cnt){
         if (this.leaves - cnt >= 0){
             this.leaves -= cnt;
