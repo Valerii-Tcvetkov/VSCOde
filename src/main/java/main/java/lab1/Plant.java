@@ -45,7 +45,7 @@ public class Plant {
      * @return Plant
      */
     public Plant addWater() {
-        this.leaves += 10;
+        this.leaves += 20;
         this.grow();
         return this;
     }
