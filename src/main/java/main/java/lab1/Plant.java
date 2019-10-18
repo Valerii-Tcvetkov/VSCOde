@@ -49,9 +49,4 @@ public class Plant {
         this.grow();
         return this;
     }
-
-    public Plant paint(String newColor){
-        this.color = newColor;
-        return this;
-    }
 }
