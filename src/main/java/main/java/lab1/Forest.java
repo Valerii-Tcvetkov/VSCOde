@@ -5,10 +5,12 @@ import java.util.*;
 public class Forest {
     public ArrayList<Tree> trees;
     public ArrayList<Plant> plants;
+    public ArrayList<Mushroom> mushrooms;
 
     public Forest() {
         this.trees = new ArrayList<Tree>();
         this.plants = new ArrayList<Plant>();
+        this.mushrooms = new ArrayList<Mushroom>();
     }
 
     /**
@@ -76,5 +78,10 @@ public class Forest {
             }
         }
         this.plants = newArrayList;
+    }
+
+    public void addMushrooms(){
+        Mushroom mush = new Mushroom(2, "White");
+        this.mushrooms.add(mush);
     }
 }
