@@ -5,10 +5,12 @@ import java.util.*;
 public class Forest {
     public ArrayList<Tree> trees;
     public ArrayList<Plant> plants;
+    public ArrayList<Mushroom> mushrooms;
 
     public Forest() {
         this.trees = new ArrayList<Tree>();
         this.plants = new ArrayList<Plant>();
+        this.mushrooms = new ArrayList<Mushroom>();
     }
 
     /**
