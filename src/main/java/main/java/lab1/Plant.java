@@ -4,7 +4,7 @@ public class Plant {
     public int height;
     public String color;
     public int leaves;
-    // Are u sure u wanna be a programmer, guy??
+    
     /**
      * Construct object Plant
      * 
@@ -47,6 +47,20 @@ public class Plant {
     public Plant addWater() {
         this.leaves += 20;
         this.grow();
+        return this;
+    }
+
+    /**
+     * Method to getting some leaves
+     * @param cnt - count of leaves
+     * @return Plant
+     */
+    public Plant getLeave(int cnt){
+        if (this.leaves - cnt >= 0){
+            this.leaves -= cnt;
+        } else {
+            this.leaves = 0;
+        }
         return this;
     }
 }
