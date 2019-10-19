@@ -80,6 +80,9 @@ public class Forest {
         this.plants = newArrayList;
     }
 
+    /**
+     * Add one more mushroom in the Forest
+     */
     public void addMushrooms(){
         Mushroom mush = new Mushroom(2, "White");
         this.mushrooms.add(mush);
