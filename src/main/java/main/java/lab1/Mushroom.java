@@ -1,16 +1,16 @@
 package main.java.lab1;
 
-public class Mushroom{
-    public int size;
+public class Mushroom extends Plant{
+    public int height;
     public String type;
 
     public Mushroom(int size, String type){
-        this.size = size;
+        super(size, "No color", 0);
         this.type = type;
     }
 
     public Mushroom grow(){
-        this.size += 5;
+        this.height += 5;
         return this;
     }
 }
